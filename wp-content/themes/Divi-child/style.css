@@ -1,0 +1,170 @@
+/*
+ Theme Name:   DIVI CHILD
+ Theme URI:    https://www.elegantthemes.com/gallery/divi/
+ Description:  This is a Divi Child 
+ Author:       Ching Ching Lee
+ Template:     Divi
+*/
+
+
+
+/* FULLWIDTH Setting for page */
+.xprofile {
+	height: 100%;
+}
+
+/*inner page*/
+
+/*layout*/
+
+.et_pb_gutter.et_pb_gutters2 #sidebar {
+    background: #fcfcfc;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 5px;
+	height: 50vh;
+}
+
+
+.bp_members {
+	background: #fcfcfc;
+	border: 1px solid rgba(0,0,0,.1);
+
+}
+
+.button {
+	border-radius: 5px;
+}
+
+/* Site Header and Intro CSS */
+
+
+/* ICON SIZE */
+
+
+/* FONT */
+
+
+/* Profile setting */
+
+.entry-title {
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	background: #6b0504;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/*.activity {
+	padding:1em;
+}
+*/
+/*remove the sidebar : https://www.elegantthemes.com/blog/divi-resources/how-to-remove-sidebars-from-divi*/
+#main-content .container:before {background: none;}
+
+
+/* FrontPage CSS */
+.frontpage_main_title_box {
+	display: flex;
+	justify-content: center;
+}
+
+.frontpage_main_title_box .et_pb_column {
+	width: 50%;
+}
+}
+
+.frontpageTitle {
+	font-size: 3.5em;
+}
+
+.frontpageSubTitle {
+	font-size: 5em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*RSS*/
+.et_pb_widget.widget_text {
+	margin:0;
+}
+
+#sb_instagram {
+	margin:;
+}
+
+.activityStream {
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+.itembox {
+	border-radius: 5px;
+	background: #fcfcfc;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+.et_pb_widget_area_left {
+	padding: 0;
+}
+
+/*.middle_itembox {
+	border: 1px solid rgba(0,0,0,.1);
+}*/
+
+
+
+.frontpg_widget ul li {
+    margin-bottom: .5em;
+    margin: 15px auto;
+}
+
+#wp_ulike-2, #wp_ulike-5, #wp_ulike-4, #wp_ulike-6{
+	width: 100% !important;
+	margin: 0;
+	padding: 15px;
+}
+
+.et_pb_sidebar_0, .et_pb_sidebar_1, .et_pb_sidebar_5, .et_pb_sidebar_6 {
+	padding: 15px;
+}
+
+
+.et_pb_widget {
+	clear: both;
+	float: none;
+	
+}
+
+
+.et_pb_widget h4 {
+	max-width: 100%;
+	text-align: center;
+	font-size: 1.3em;
+}
+.bp-extended-user-groups-widget-item{
+	display: flex;
+	justify-content: space-around;
+}
+
+.bp-extended-user-groups-widget-item .item {margin-left: 4px;}
+
+.bp-extended-user-groups-widget-item .item .item-meta {
+	font-size: 0.8em !important;
+}
+
+/*side logo*/
+/*.et_header_style_left .logo_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3px;
+}*/
+
+
+
+
+
+
+
+
