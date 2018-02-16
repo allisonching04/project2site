@@ -6,7 +6,9 @@
  Template:     Divi
 */
 
-
+body{
+	height: 100%;
+}
 
 /* FULLWIDTH Setting for page */
 .xprofile {
@@ -16,12 +18,27 @@
 /*inner page*/
 
 /*layout*/
+.type-page {
+	border: 1px solid rgba(0,0,0,.1);
+}
+
 
 .et_pb_gutter.et_pb_gutters2 #sidebar {
     background: #fcfcfc;
 	border: 1px solid rgba(0,0,0,.1);
 	border-radius: 5px;
-	height: 50vh;
+}
+
+.et_right_sidebar #sidebar {
+	padding: 10px;
+}
+
+.item-list-tabs {
+	padding:0 1em;
+}
+
+#buddypress .activity, .dir-list{
+	padding: 0 1em;
 }
 
 
@@ -40,8 +57,48 @@
 
 /* ICON SIZE */
 
-
+img.avatar {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 1px 0 #fff;
+	-moz-box-shadow: 0 1px 0 #fff;
+	box-shadow: 0 1px 0 #fff;
+}
 /* FONT */
+#top-menu {
+	font-family: 'Roboto', sans-serif;
+}
+
+h3,h4 {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 900;
+	color: #3c3c3c !important;
+}
+
+/*.fontpage mid shortcode */
+
+#whats-new-form, .shortcode-activity-stream, .activity-shortcode-title {
+	padding: 0 20px;
+}
+
+/* border h3 title */
+.activity-shortcode-title {
+	margin: 20px auto;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.widgettitle {
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.most_liked_activity, .bp-login-widget-user-links, #extended-groups-list {
+	margin-top: 10px;
+}
 
 
 /* Profile setting */
@@ -52,13 +109,13 @@
 	padding: 10px;
 	background: #6b0504;
 	color: #fff;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
-/*.activity {
-	padding:1em;
+.monthlyUserGrid{
+	text-align: center;
 }
-*/
 /*remove the sidebar : https://www.elegantthemes.com/blog/divi-resources/how-to-remove-sidebars-from-divi*/
 #main-content .container:before {background: none;}
 
@@ -72,7 +129,7 @@
 .frontpage_main_title_box .et_pb_column {
 	width: 50%;
 }
-}
+
 
 .frontpageTitle {
 	font-size: 3.5em;
@@ -89,9 +146,7 @@
 	margin:0;
 }
 
-#sb_instagram {
-	margin:;
-}
+
 
 .activityStream {
 	border-radius: 5px;
@@ -119,7 +174,7 @@
     margin: 15px auto;
 }
 
-#wp_ulike-2, #wp_ulike-5, #wp_ulike-4, #wp_ulike-6{
+/*#wp_ulike-2, #wp_ulike-5, #wp_ulike-4, #wp_ulike-6{
 	width: 100% !important;
 	margin: 0;
 	padding: 15px;
@@ -128,7 +183,13 @@
 .et_pb_sidebar_0, .et_pb_sidebar_1, .et_pb_sidebar_5, .et_pb_sidebar_6 {
 	padding: 15px;
 }
+*/
 
+.frontpg_widget {
+	padding: 15px;
+	width: 100%;
+	margin: 0;
+}
 
 .et_pb_widget {
 	clear: both;
@@ -153,14 +214,39 @@
 	font-size: 0.8em !important;
 }
 
-/*side logo*/
-/*.et_header_style_left .logo_container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 3px;
-}*/
+.widget.buddypress div.item-meta {
+	margin: 0;
+}
 
+.vcard {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.frontpg_widget ul li {
+    margin-bottom: .5em;
+    margin: 5px 0;
+}
+
+/* entry page */
+
+.entry-title {
+	font-family: 'Open Sans', Arial, sans-serif !important; 
+	background: #DDDAD6;
+}
+
+
+
+
+/*https://www.elegantthemes.com/blog/divi-resources/how-to-make-your-divi-footer-sticky*/
+#main-footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
 
 
 
