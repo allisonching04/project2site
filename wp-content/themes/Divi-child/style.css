@@ -89,9 +89,9 @@ body{
 }
 
 /*sidebar layout*/
-.type-page {
+/*.type-page {
 	border: 1px solid rgba(0,0,0,.1);
-}
+}*/
 
 .et_pb_gutter.et_pb_gutters2 #sidebar {
     background: #fcfcfc;
@@ -331,7 +331,7 @@ h3,h4 {
 /*remove the sidebar : https://www.elegantthemes.com/blog/divi-resources/how-to-remove-sidebars-from-divi*/
 #main-content .container:before {background: none;}
 /*https://www.elegantthemes.com/blog/divi-resources/how-to-make-your-divi-footer-sticky*/
-.members #page-container #main-footer, .register #page-container #main-footer, .page-id-131 #page-container #main-footer{
+.members #page-container #main-footer{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -393,8 +393,7 @@ input {
 .bp-extended-user-groups-widget-item .item .item-meta { font-size: 0.8em !important;}
 .widget.buddypress div.item-meta {margin: 0;}
 
-/*iinner page*/
-.type-page {border-radius: 5px;}
+
 
 /*moble*/
 
@@ -416,6 +415,26 @@ input {
     width: 100% !important;
     margin: 0 !important;
 	}
+	#buddypress div.dir-search {
+	    float: right;
+	    margin: 0 !important;
+	}
+	.members #page-container #main-footer {
+		position: relative;
+	}
 }
 
+@media only screen and (max-width: 580px) {
+	#register-page .standard-form {
+	    display: grid;
+	    align-content: center;
+    	justify-content: center;
+	}
+    #buddypress .standard-form #basic-details-section, #buddypress .standard-form #blog-details-section, #buddypress .standard-form #profile-details-section {
+    	width: 100%;
+    }
+    .et_right_sidebar #sidebar {
+	    margin-top: 50px;
+	}
+}
 
