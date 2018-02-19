@@ -6,58 +6,11 @@
  Template:     Divi
 */
 
+
 body{
 	height: 100%;
 }
-
-/* FULLWIDTH Setting for page */
-.xprofile {
-	height: 100%;
-}
-
-/*inner page*/
-
-/*layout*/
-.type-page {
-	border: 1px solid rgba(0,0,0,.1);
-}
-
-
-.et_pb_gutter.et_pb_gutters2 #sidebar {
-    background: #fcfcfc;
-	border: 1px solid rgba(0,0,0,.1);
-	border-radius: 5px;
-}
-
-.et_right_sidebar #sidebar {
-	padding: 10px;
-}
-
-.item-list-tabs {
-	padding:0 1em;
-}
-
-#buddypress .activity, .dir-list{
-	padding: 0 1em;
-}
-
-
-.bp_members {
-	background: #fcfcfc;
-	border: 1px solid rgba(0,0,0,.1);
-
-}
-
-.button {
-	border-radius: 5px;
-}
-
-/* Site Header and Intro CSS */
-
-
-/* ICON SIZE */
-
-img.avatar {
+.avatar {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
@@ -67,8 +20,126 @@ img.avatar {
 	-moz-box-shadow: 0 1px 0 #fff;
 	box-shadow: 0 1px 0 #fff;
 }
+#extended-groups-list li a:hover ,#menu-profile-menu li a:hover {
+	color: #e9b000 !important;
+
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+}
+#extended-groups-list .current_page_item a, #menu-profile-menu .current_page_item a {
+	color: #eb6e80 !important;
+}
+
+
+/*https://www.elegantthemes.com/blog/divi-resources/beautiful-css-hover-effects-you-can-add-to-your-divi-menus*/
+#top-menu .current-menu-item a::before,
+#top-menu .current_page_item a::before {
+	 content: "";
+	 position: absolute;
+	 z-index: 2;
+	 left: 0;
+	 right: 0;
+}
+#top-menu li a:before {
+	 content: "";
+	 position: absolute;
+	 z-index: -2;
+	 left: 0;
+	 right: 100%;
+	 bottom: 50%;
+	 background: #e9b000; /*** COLOR OF THE LINE ***/
+	 height: 3px; /*** THICKNESS OF THE LINE ***/
+	 -webkit-transition-property: right;
+	 transition-property: right;
+	 -webkit-transition-duration: 0.3s;
+	 transition-duration: 0.3s;
+	 -webkit-transition-timing-function: ease-out;
+	 transition-timing-function: ease-out;
+}
+#top-menu li a:hover {
+ 	opacity: 1 !important;
+}
+#top-menu li a:hover:before {
+ 	right: 0;
+}
+#top-menu li li a:before {
+	bottom: 10%;
+}
+
+
+/*header*/
+#page-container, #main-header {
+	-webkit-box-shadow:none !important; 
+	-moz-box-shadow:none !important;	 
+	box-shadow:none !important;
+ 
+}
+
+.et_pb_widget_area, .et_pb_text{
+    position: relative;
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.et_pb_section {
+    padding: 0 !important;
+}
+
+/*sidebar layout*/
+.type-page {
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+.et_pb_gutter.et_pb_gutters2 #sidebar {
+    background: #fcfcfc;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 5px;
+}
+.et_right_sidebar #sidebar {
+	padding: 10px;
+}
+.item-list-tabs {
+	padding:0 1em;
+}
+#buddypress .activity, .dir-list{
+	padding: 0 1em;
+}
+
+.bp_members {
+	background: #fcfcfc;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+/* GRID */
+.post-25 .entry-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 120px auto;
+}
+
+
+.et_pb_fullwidth_section {
+	z-index: -1;
+	grid-column: 1/-1;
+	grid-row: 1/2;
+}
+
+.frontpageCoreContainer {
+	background: transparent;
+	z-index: 2;
+	grid-column: 1/-1;
+}
+
+.et_pb_text {
+	background-color: #fff;
+}
+
+
 /* FONT */
-#top-menu {
+ul li a {
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -78,50 +149,76 @@ h3,h4 {
 	color: #3c3c3c !important;
 }
 
-/*.fontpage mid shortcode */
 
-#whats-new-form, .shortcode-activity-stream, .activity-shortcode-title {
-	padding: 0 20px;
+.header-content-container h1 {
+	font-family: 'Open Sans', Arial, sans-serif !important; 
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
 }
 
-/* border h3 title */
-.activity-shortcode-title {
-	margin: 20px auto;
-	padding-bottom: 20px;
+.entry-title {
+	font-family: 'Open Sans', Arial, sans-serif !important; 
+	text-align: center;
+	font-weight: bold;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
-.widgettitle {
-	padding-bottom: 10px;
-	border-bottom: 1px solid rgba(0,0,0,.1);
+.main_title {
+	margin-bottom: 0px;
+	padding: 5px;
 }
 
-.most_liked_activity, .bp-login-widget-user-links, #extended-groups-list {
-	margin-top: 10px;
+.dir-search {
+	padding:0 5px;
 }
+
+.header-content-container {
+	padding-left: 0;
+	margin-right: 0;
+}
+
+/*.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content {
+	padding: 0;
+	margin: 0 !important;
+	text-align: center;
+}
+
+
+
+
+*/
 
 
 /* Profile setting */
+#bp_core_login_widget-2, #bp_core_login_widget-3 {
+	display: flex;
+	flex-direction: column;
+}
+.bp-login-widget-user-avatar {
+	justify-items: center;
+	align-self: center;
+}
 
-.entry-title {
+.widget.buddypress .bp-login-widget-user-links > div, .widget.buddypress .bp-login-widget-user-logout > div {
+	padding: 0;
+}
+.bp-login-widget-user-link, .bp-login-widget-user-logout {
 	text-align: center;
-	margin: auto;
-	padding: 10px;
-	background: #6b0504;
-	color: #fff;
-	font-weight: bold;
+}
+
+.bp-login-widget-user-link {
 	text-transform: uppercase;
 }
 
 .monthlyUserGrid{
 	text-align: center;
 }
-/*remove the sidebar : https://www.elegantthemes.com/blog/divi-resources/how-to-remove-sidebars-from-divi*/
-#main-content .container:before {background: none;}
+
 
 
 /* FrontPage CSS */
-.frontpage_main_title_box {
+/*.frontpage_main_title_box {
 	display: flex;
 	justify-content: center;
 }
@@ -139,10 +236,11 @@ h3,h4 {
 	font-size: 5em;
 	text-transform: uppercase;
 	font-weight: bold;
-}
+}*/
 
 /*RSS*/
-.et_pb_widget.widget_text {
+
+/*.et_pb_widget.widget_text {
 	margin:0;
 }
 
@@ -163,27 +261,11 @@ h3,h4 {
 	padding: 0;
 }
 
-/*.middle_itembox {
-	border: 1px solid rgba(0,0,0,.1);
-}*/
-
-
 
 .frontpg_widget ul li {
     margin-bottom: .5em;
     margin: 15px auto;
 }
-
-/*#wp_ulike-2, #wp_ulike-5, #wp_ulike-4, #wp_ulike-6{
-	width: 100% !important;
-	margin: 0;
-	padding: 15px;
-}
-
-.et_pb_sidebar_0, .et_pb_sidebar_1, .et_pb_sidebar_5, .et_pb_sidebar_6 {
-	padding: 15px;
-}
-*/
 
 .frontpg_widget {
 	padding: 15px;
@@ -197,7 +279,6 @@ h3,h4 {
 	
 }
 
-
 .et_pb_widget h4 {
 	max-width: 100%;
 	text-align: center;
@@ -207,50 +288,111 @@ h3,h4 {
 	display: flex;
 	justify-content: space-around;
 }
-
 .bp-extended-user-groups-widget-item .item {margin-left: 4px;}
+.bp-extended-user-groups-widget-item .item .item-meta { font-size: 0.8em !important;}
+.widget.buddypress div.item-meta {margin: 0;}*/
 
-.bp-extended-user-groups-widget-item .item .item-meta {
-	font-size: 0.8em !important;
+
+
+/*register page*/
+.register-section h2{
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 900;
+	color: #3c3c3c !important;
 }
 
-.widget.buddypress div.item-meta {
-	margin: 0;
+.register-section {
+	margin-top: 7vh;
+}
+.field-visibility-settings-toggle {margin:10px auto;}
+.editfield { margin:15px auto; }
+
+/*group pg*/
+#item-actions h2 {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 900;
+	color: #3c3c3c !important;	
 }
 
 .vcard {
-	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
-
-.frontpg_widget ul li {
-    margin-bottom: .5em;
-    margin: 5px 0;
-}
-
-/* entry page */
-
-.entry-title {
-	font-family: 'Open Sans', Arial, sans-serif !important; 
-	background: #DDDAD6;
+.bp-extended-user-groups-widget-item {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
 
 
 
-
+#settings-form {
+	padding: 0 1em;
+}
+/*remove the sidebar : https://www.elegantthemes.com/blog/divi-resources/how-to-remove-sidebars-from-divi*/
+#main-content .container:before {background: none;}
 /*https://www.elegantthemes.com/blog/divi-resources/how-to-make-your-divi-footer-sticky*/
-#main-footer {
-	position: relative;
+.members #page-container #main-footer, .register #page-container #main-footer {
+	position: absolute;
 	bottom: 0;
 	width: 100%;
 }
 
 
+input {
+	border-radius: 5px;
+}
+
+.visibility-toggle-link {border-radius: 5px;}
+.button, .settings-input {
+	border-radius: 5px !important;
+}
 
 
+/*  homepage all go here */
+.header-content {
+	margin:0 !important;
+	padding:0;}
+.et_pb_module_header {font-size: 4em;}
+.itembox {
+	border-radius: 5px;
+	background: #fcfcfc;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+.activityStream {border-radius: 5px;}
+.et_pb_widget_area_left {
+	padding: 0;
+}
+
+.widgettitle {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	text-align: center;
+	padding: 10px;
+}
+
+.et_pb_widget_area ul{
+	padding: 5px 10px !important;
+}
+.widget_search {padding: 5px 10px !important;}
+#bp_core_login_widget-2 {padding: 5px 10px !important;}
 
 
+.activity-shortcode-title {
+/*	margin: 20px auto;*/
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	text-align: center;
+}
+
+#whats-new-form {padding:10px;}
+
+.most_liked_activity, .bp-login-widget-user-links, #extended-groups-list {
+	margin-top: 10px;
+}
+.bp-extended-user-groups-widget-item .item {margin-left: 4px;}
+.bp-extended-user-groups-widget-item .item .item-meta { font-size: 0.8em !important;}
+.widget.buddypress div.item-meta {margin: 0;}
+
+/*iinner page*/
+.type-page {border-radius: 5px;}
 
