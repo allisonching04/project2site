@@ -211,7 +211,7 @@ h3,h4 {
 	text-transform: uppercase;
 }
 
-.monthlyUserGrid{
+.rss, .monthlyUserGrid{
 	text-align: center;
 }
 
@@ -395,4 +395,27 @@ input {
 
 /*iinner page*/
 .type-page {border-radius: 5px;}
+
+/*moble*/
+
+
+.mobile_menu_bar:before{
+  color:#ffffff !important;
+}
+
+@media only screen and (max-width: 980px) and (min-width: 400px) {
+	.profile_and_group {
+		text-align: center;
+	}
+
+	.popular_field, .input_field_stream {
+		text-align: center;
+	}
+
+	.et_pb_column .et_pb_blog_grid .column.size-1of2, .et_pb_column .et_pb_widget:nth-child(n) {
+    width: 100% !important;
+    margin: 0 !important;
+	}
+}
+
 
