@@ -331,7 +331,7 @@ h3,h4 {
 /*remove the sidebar : https://www.elegantthemes.com/blog/divi-resources/how-to-remove-sidebars-from-divi*/
 #main-content .container:before {background: none;}
 /*https://www.elegantthemes.com/blog/divi-resources/how-to-make-your-divi-footer-sticky*/
-.members #page-container #main-footer, .register #page-container #main-footer {
+.members #page-container #main-footer, .register #page-container #main-footer, .page-id-131 #page-container #main-footer{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
